@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/tokoku', ['uses' => 'tokokuController@index', 'as' => 'index' ]);
